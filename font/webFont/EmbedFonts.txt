@@ -1,0 +1,11 @@
+Upload font from this site to get a webkit folder
+- https://www.fontsquirrel.com/tools/webfont-generator
+
+Embedded in the header of css file like this format:
+
+@font-face {
+  font-family: "alegreya";
+  src: url("fonts/fontsWebkit/alegreya-regular-webfont.woff") format("woff"), url("fonts/fontsWebkit/alegreya-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

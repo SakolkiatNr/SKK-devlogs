@@ -1,0 +1,20 @@
+A free font distributor:
+- https://www.fontsquirrel.com/
+- https://www.dafont.com/
+- https://everythingfonts.com/
+
+A paid font distributor: 
+- https://www.fonts.com/
+- https://www.myfonts.com/
+You can also buy fonts directly from font foundries, for example
+- https://www.linotype.com/
+- https://www.monotype.com/
+- https://www.exljbris.com/
+
+An online font service: 
+- This is a site that stores and serves the fonts for you, making the whole process easier.
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts#using_an_online_font_service
+
+
+Webfont Generator
+https://www.fontsquirrel.com/tools/webfont-generator        
