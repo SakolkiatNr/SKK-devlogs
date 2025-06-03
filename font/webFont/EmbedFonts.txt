@@ -3,9 +3,19 @@ Upload font from this site to get a webkit folder
 
 Embedded in the header of css file like this format:
 
+**Recommended**
 @font-face {
   font-family: "alegreya";
   src: url("fonts/fontsWebkit/alegreya-regular-webfont.woff") format("woff"), url("fonts/fontsWebkit/alegreya-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  unicode-range: U+0025-00FF;
 }
+
+always remove unneccessaries glyphs to compact file size leading to load web faster -> `unicode-range`
+
+Performance -> `font-display: optional`
+
+Quickly display text and still use a web-font -> `font-display: swap`
+
+Text is displayed in a web font -> Use `font-display: block`

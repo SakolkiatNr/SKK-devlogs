@@ -1,0 +1,11 @@
+<!-- You can request that browsers start downloading a font file as soon as possible. 
+ - Add a link element to the head of your document that references your web font file. 
+ - A rel attribute with a value of preload tells the browser to prioritize that file. 
+ - An as attribute with a value of font tells the browser what kind of file this is. 
+ - The type attribute allows you to be even more specific.
+
+ -  Use the CSS font-display property to tell the browser how to manage the switchover from a system font to a web font. You could choose to show no text at all until the web font is loaded.
+ -->
+
+<link href="/fonts/roboto-regular.woff2" type="font/woff2" 
+  rel="preload" as="font" crossorigin>

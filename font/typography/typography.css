@@ -1,0 +1,79 @@
+/* Change property size to user screen*/
+@media (min-width: 30em) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (min-width: 40em) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 50em) {
+  html {
+    font-size: 175%;
+  }
+}
+
+@media (min-width: 60em) {
+  html {
+    font-size: 200%;
+  }
+}
+
+/* Scaling text */
+html {
+  font-size: calc(0.75rem + 1.5vw);
+}
+
+    /* control scaling start and finish */
+    html {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    /* calm(min-value, scaling-value, max-value */
+    }
+
+
+/* Line length */
+/* Anything from 45 to 75 characters is widely regarded as a satisfactory line length for a single-column page set in a serifed text face in a text size. The 66-character line (counting both letters and spaces) is widely regarded as ideal. For multiple column work, a better average is 40 to 50 characters. */
+article {
+  max-inline-size: 66ch;
+}
+/* The browser correctly supports hyphenation */
+p[lang="en"] {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Line height */
+article {
+  max-inline-size: 66ch;
+  line-height: 1.65;
+}
+blockquote {
+  max-inline-size: 45ch;
+  line-height: 2;
+}
+/* optimal line height */
+p {
+    line-height: calc(1ex / 0.32);
+}
+
+/* Web fonts */
+/* Use @font-face to tell browsers where to find your web font files. Use woff2 as your web font format. It's well supported and has the best performance gains. */
+@font-face {
+  font-family: Roboto;
+  src: url('/fonts/roboto-regular.woff2') format('woff2');
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* make font swap more comfortable and adjusting the font to the same height */
+@supports (font-size-adjust: 1;) {
+    article {
+        font-size-adjust: 0.5;
+    }
+}
+
