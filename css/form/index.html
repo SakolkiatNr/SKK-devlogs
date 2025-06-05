@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Method 
+     GET: retrieve sth from server
+     POST: change sth on the server
+     -->
+
+    <form action="example.com/pth" method="post">
+        <label>Input</label>
+        <input type="text">
+    </form>
+
+    <form action="example.com/pth" method="post">
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" placeholder="Write your name...">
+    
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+        </fieldset>
+    </form>
+
+    <form action="example.com/pth" method="post">
+        <label for="user_email">Email Address:</label>
+        <input type="email" id="user_email" name="email" placeholder="your@email.com">
+
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="password">
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+    </form>
+
+    <!-- Text area
+    While technically not an input element, the text area element provides an input box that can accept text that spans multiple lines like user comments and reviews.  -->
+    <textarea rows="5" cols="20">nonsense</textarea>
+
+    <select name="Car">
+        <optgroup label="Europe brands">
+            <option value="mercedes">Mercedes</option>
+            <option value="tesla">Tesla</option>
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mini">Mini</option>
+            <option value="ford">Ford</option>
+        </optgroup>
+        <optgroup label="Asia brands">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="mazda">Mazda</option>
+            <option value="mitsubishi">Mitsubishi</option>
+            <option value="nissan">Nissan</option>
+        </optgroup>
+    </select>
+
+    <h1>Ticket Type</h1>
+    <div>
+        <input type="radio" id="child" name="ticket_type" value="child">
+        <label for="child">Child</label>
+    </div>
+    <div>
+        <input type="radio" name="adult" id="ticket_type" value="adult" checked>
+        <label for="adult">Adult</label>
+    </div>
+    <div>
+        <input type="radio" name="senior" id="ticket_type" value="senior">
+        <label for="senior">Senior</label>
+    </div>
+
+    <h1>Pizza Toppings</h1>
+    <div>
+        <input type="checkbox" id="sausage" name="topping" value="sausage">
+        <label for="sausage">Sausage</label>
+    </div>
+    <div>
+        <input type="checkbox" id="onions" name="topping" value="onions">
+        <label for="onions">Onions</label>
+    </div>
+    <div>
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</body>
+</html>
