@@ -1,3 +1,4 @@
+/* select parent's child */
 main > div {
     background-color: red;
     width: 50px; 
@@ -13,6 +14,7 @@ main > div > div {
     height: 50px;
 }
 
+/* select child element next to the class */
 .group1 + div {
     background-color: chartreuse;
 }
@@ -21,6 +23,7 @@ main > div > div {
     background-color: cyan;
 }
 
+/* select all the elements next to the class */
 .group1 ~ div {
     border: black 3px solid;
 }
