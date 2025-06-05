@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-flow: column;
+}
+button.min {
+    width: min(50%, 300px);
+    padding: 1.5rem;
+    /* will select the lowest value according to the viewport */
+    
+}
+
+button.max {
+    width: max(50%, 300px);
+    padding: 1.5rem;
+    /* will select the highest value according to the viewport */
+}

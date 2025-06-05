@@ -1,0 +1,20 @@
+:root {
+    --background-clr: grey;
+    --padding-s: 1em;
+}
+
+button {
+    background-color: var(--background-clr, black);
+    padding: var(--padding-s);
+    font-size: 2rem;
+}
+
+.button1 {
+    --background-clr: cyan;
+}
+.button2 {
+    --background-clr: yellow;
+}
+.button3 {
+    --background-clr: green;
+}
