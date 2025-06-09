@@ -1,0 +1,101 @@
+/* Custom select rendering */
+select, ::picker(select) {
+    appearance: base-select;
+}
+
+select {
+    border: 2px solid #ddd;
+    background: #eee ;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+select:hover,
+select:focus {
+    background-color: #ddd;
+}
+
+/* styling picker icon */
+select::picker-icon {
+    color: #999;
+    transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+    rotate: 180deg;
+}
+
+/* styling drop-down picker */
+::picker(select) {
+    border: none;
+}
+
+option {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+
+    border: 2px solid #ddd;
+    background-color: #eee;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+option:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+option:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+option:not(option:last-of-type) {
+    border-bottom: none;
+}
+
+option:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+option:hover,
+option:focus {
+    background-color: plum;
+}
+
+option .icon {
+    font-size: 1.6rem;
+    text-box: trim-both cap alphabetic;
+}
+
+/* adjusting the styling of the selected option contents inside the select button */
+
+selectedcontent .icon {
+    display: none;
+}
+
+/* styling currently select option */
+option:checked {
+    font-weight: bold;
+}
+
+option::checkmark {
+    order: 1;
+    margin-left: auto;
+    content: "☑️";
+}
+
+/* animating picker using popover states */
+::picker(select) {
+    opacity: 0;
+    transition: all 0.4s allow-discrete; 
+}
+
+::picker(select):popover-open {
+    opacity: 1;
+}
+
+@starting-style {
+    ::picker(select):popover-open {
+        opacity: 0;
+    }
+}
