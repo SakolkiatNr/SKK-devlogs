@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="mail">Email address (@example.com only):</label>
+        <input type="email" id="mail" />
+        <button>Submit</button>
+    </form>
+
+    <script>
+        const email = document.getElementById("mail");
+
+        email.addEventListener("input", (event) => {
+            // validate with the built-in constraints
+            email.setCustomValidity("");
+            if (!email.validity.valid) {
+                return;
+            }
+            
+            // Extend with a custom constraints
+            if (!email.value.endsWith("@example.com")) {
+                email.setCustomValidity("Please enter an email address of @example.com");
+            }
+        })
+
+    </script>
+</body>
+</html>
