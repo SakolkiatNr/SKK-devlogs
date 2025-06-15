@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+
+    /* define rows, columns */
+
+    /* grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px; */
+    /* short hands */
+    /* grid-template: row/column */
+    grid-template: 50px 50px / 50px 50px;
+
+    /* new rows stay the same value */
+    grid-auto-rows: 50px;
+
+    /* gap */
+    column-gap: 10px;
+    row-gap: 20px;
+    gap: 20px 20px;
+}
+
+div > div {
+    border: 1px solid red;
+}
