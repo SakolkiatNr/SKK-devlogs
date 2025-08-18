@@ -51,3 +51,4 @@ function Player(name, marker) {
         console.log(this.name)
     };
 }
+
