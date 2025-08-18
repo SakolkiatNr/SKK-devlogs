@@ -16,27 +16,27 @@ myObject["obnoxious property"]; //return function
 
 
 // Object constructors
-function Player(name, marker) {
-    // it works like this vvv
-    // name = 'argument name';
-    this.name = name;
-    this.marker = marker;
+// function Player(name, marker) {
+//     // it works like this vvv
+//     // name = 'argument name';
+//     this.name = name;
+//     this.marker = marker;
     
-}
+// }
 
-const player = new Player('arm', 'lol');
-console.log(player.name); // 'arm'
+// const player = new Player('arm', 'lol');
+// console.log(player.name); // 'arm'
 
 // you can do function as well 
 // take a look at this
 
-function Smth(name, idk) {
-    this.name = name;
-    this.speech = idk;
-    this.quote = speech() {
-        console.log(this.quote);
-    }
-}
+// function Smth(name, idk) {
+//     this.name = name;
+//     this.speech = idk;
+//     this.quote = function() {
+//         console.log(this.quote);
+//     };
+// }
 
 // safeguarding constructors!
 // if user calls function without `new` it would hard to track bugs
@@ -51,4 +51,17 @@ function Player(name, marker) {
         console.log(this.name)
     };
 }
+
+const player1 = new Player('arm', 'X');
+const player2 = new Player('fah', 'O');
+
+// Prototype
+Object.getPrototypeOf(player1) === Player.prototype; // true
+Object.getPrototypeOf(player2) === Player.prototype; // true
+
+// player1,player2 inherit properties from Player()
+// WHY this is matter?
+// So we don't have to define property everytime we create an obj, thus memories saved
+
+
 
