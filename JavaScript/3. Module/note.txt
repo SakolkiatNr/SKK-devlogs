@@ -1,0 +1,11 @@
+module ground rules:
+- self contained module
+    - everything to do with module  is on module
+    - no global variable
+    - if module manage more than one thing it should be split up
+- seperation of concern
+- DRY code: Don't repeat yourself
+- efficient DOM usage
+    - few selection
+- no memory leaks
+    - all events can be unbound
