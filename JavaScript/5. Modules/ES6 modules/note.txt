@@ -1,0 +1,14 @@
+There are 2 types of exported and importing
+
+Export
+1 .`export` in front of declaration
+    `export const var1
+    `export const var2`
+
+2. seperate line
+    `const var1`
+    `const var2`
+    export {var1, var2};
+
+Import
+`import {vars} from './file-location`
