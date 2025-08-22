@@ -1,6 +1,16 @@
-export const greeting = 'hello';
-export const farewell = 'bye';
+export default class User {
+    constructor (name, age) {
+        this.name = name
+        this.age = age
+    }
+}
 
-const smalltalk = 'hows going?';
-const bigtalk = 'guess what';
-export {smalltalk, bigtalk};
+function printName(user) {
+    console.log(`User's name is ${user.name}`)
+}
+
+function printAge(age) {
+    console.log(`User is ${age} years old`)
+}
+
+export {printAge, printName};

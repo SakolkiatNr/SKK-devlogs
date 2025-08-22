@@ -1,2 +1,4 @@
-import { greeting, farewell } from "./script1";
-import { smalltalk, bigtalk } from "./script1";
+import U ,{ printName , printAge} from "./script1.js"
+
+const user = new U('skk', 25);
+console.log(user);
