@@ -17,10 +17,10 @@ addOne(logMyNumber)
 
 
 // pseudocode
-function addOne(thenRunThisFunction) {
-	waitAMinuteAsync(function waitAMinute() {
-		thenRunThisFunction()
-	})
-}
-
-addOne(function thisGetsRunAfterAddOneFinishes() { })
+// function addOne(thenRunThisFunction) {
+// 	waitAMinuteAsync(function waitAMinute() {
+// 		thenRunThisFunction()
+// 	})
+// }
+//
+// addOne(function thisGetsRunAfterAddOneFinishes() { })
