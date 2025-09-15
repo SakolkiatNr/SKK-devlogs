@@ -69,16 +69,3 @@ async function demoGithubUser() {
 }
 
 demoGithubUser();
-
-
-
-
-
-
-
-
-
-
-
-//
-// demoGithubUser();
